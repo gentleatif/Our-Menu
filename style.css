@@ -1,0 +1,97 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: #f6f6f6;
+}
+
+/*    **** small box background    ****/
+.box-1 div div h4 {
+  background-color: #1687a7;
+  color: white;
+}
+
+.box-2 div div h4 {
+  background-color: #5b5b5b;
+  color: white;
+}
+.box-3 div div h4 {
+  background-color: #00af91;
+  color: white;
+}
+
+.box-12 {
+  display: flex;
+}
+.row {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  color: #161d6f;
+  margin: 10px auto;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+
+.content-container {
+  border: 2px solid #9a8194;
+  margin: 10px 12px;
+  background-color: #a2d0c1;
+}
+
+p {
+  padding: 2px;
+  padding-top: 5px;
+}
+
+.title {
+  position: relative;
+}
+h4 {
+  border: 2px solid #9a8194;
+  display: inline-block;
+  position: absolute;
+  right: -2px;
+  top: -23px;
+}
+
+/*      *** desktop layout ***        */
+@media screen and (min-width: 992px) {
+  .heading {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  h2 {
+    position: absolute;
+    top: 45px;
+  }
+}
+
+/*      ** Tablet layout **              */
+
+@media screen and (max-width: 991px) {
+  .box-12 {
+    display: flex;
+  }
+  .row {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/*      **mobile layout**                */
+
+@media screen and (max-width: 767px) {
+  .row {
+    display: block;
+  }
+  .box-12 {
+    display: block;
+  }
+}
